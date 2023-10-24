@@ -1,0 +1,283 @@
+* {
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+}
+
+h1,
+ul,
+#AddItemInListButt,
+#main-canvas,
+#input-canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    z-index: 0;
+    height: 99vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #060B10;
+    /* background-color: black; */
+}
+
+#main-canvas {
+    width: 1440px;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    width: 1340px;
+    height: 4rem;
+    color: aliceblue;
+}
+
+#input-canvas {
+    height: 7rem;
+    width: 1340px;
+}
+
+#ul-canvas::-webkit-scrollbar {
+    display: none;
+}
+
+#ul-canvas {
+    height: calc(100vh - 11.5rem);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 1340px;
+}
+
+ul {
+    gap: 10px;
+    width: 1340px;
+    color: black;
+    margin: 15px 0px 0px 0px;
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
+}
+
+ul li {
+    border-bottom: 1px solid white;
+    display: flex;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border: 0px 0px 1px 0px white;
+    width: 1240px;
+}
+
+ul li #LiSpan {
+    text-align: center;
+    text-align: left;
+    font-weight: 100;
+    font-size: 28px;
+    color: aliceblue;
+    width: 900px;
+}
+
+.CheckRadio {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 10px;
+    border: #670c07 0.2em solid;
+    background-color: #212121;
+}
+
+#input-canvas {
+    gap: 20px;
+}
+
+.ListItems {
+    display: flex;
+    align-items: center;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 1441px) {
+    #main-canvas {
+        width: 1440px;
+    }
+    .input {
+        width: 50vw;
+    }
+    h1,
+    #input-canvas,
+    ul,
+    #ul-canvas {
+        width: 90vw;
+    }
+    ul li {
+        width: 80vw;
+    }
+    ul li #LiSpan {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    #main-canvas {
+        width: 1024px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #main-canvas {
+        width: 768px;
+    }
+    .input {
+        padding: 0px;
+        width: 40vw;
+        height: 2rem;
+        font-size: 12px;
+    }
+    #input-canvas {
+        height: 4rem;
+    }
+    .user-label {
+        top: -11px;
+        font-size: 14px;
+    }
+    .input:focus~label,
+    input:valid~label {
+        top: 1px;
+    }
+    #AddItemInListButt {
+        width: 7em;
+        height: 2.75em;
+        font-size: 16px;
+    }
+    #AddItemInListButt h3 {
+        font-size: 18px;
+    }
+    #ul-canvas {
+        height: calc(100vh - 8.5rem);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #main-canvas {
+        width: 425px;
+    }
+    #ul-canvas {
+        height: calc(100vh - 6.5rem);
+    }
+    #input-canvas {
+        height: 2rem;
+    }
+    .input {
+        height: 2em;
+        padding: 0px;
+        width: 180px;
+        font-size: 12px;
+    }
+    .user-label {
+        top: -10px;
+        font-size: 8px;
+    }
+    .input:focus~label,
+    input:valid~label {
+        top: 1px;
+    }
+    ul {
+        gap: 5px;
+    }
+    ul li #LiSpan {
+        font-size: 12px;
+        width: 50vw;
+    }
+    .CheckRadio {
+        height: 15px;
+        width: 15px;
+    }
+    #AddItemInListButt {
+        width: 7em;
+        height: 2.5em;
+        font-size: 10px;
+    }
+    #AddItemInListButt h3 {
+        font-size: 12px;
+    }
+    #DeletionButt,
+    #EditButt {
+        width: 5.5em;
+        height: 1.8em;
+        font-size: 12px;
+        border: #670c07 0.1em solid;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #main-canvas {
+        width: 320px;
+    }
+    h1,
+    #input-canvas,
+    ul,
+    #ul-canvas {
+        width: 90vw;
+    }
+    ul li {
+        width: 80vw;
+    }
+    ul li #LiSpan {
+        width: 50vw;
+    }
+    #ul-canvas {
+        height: calc(100vh - 6rem);
+    }
+    #input-canvas {
+        height: 2rem;
+    }
+    .input {
+        padding: 0px;
+        width: 180px;
+        font-size: 12px;
+    }
+    .user-label {
+        top: -11px;
+        font-size: 8px;
+    }
+    .input:focus~label,
+    input:valid~label {
+        top: 1px;
+    }
+    h1,
+    #input-canvas,
+    ul,
+    #ul-canvas {
+        width: 90vw;
+    }
+    ul li {
+        width: 80vw;
+    }
+    ul li #LiSpan {
+        font-size: 10px;
+    }
+    #AddItemInListButt {
+        gap: 4px;
+        font-size: 8px;
+    }
+    #AddItemInListButt h3 {
+        font-size: 10px;
+    }
+    #DeletionButt,
+    #EditButt {
+        width: 6.5em;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,46 @@
+#AddItemInListButt,
+#DeletionButt,
+#EditButt {
+    background-color: #ffffff00;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+#AddItemInListButt {
+    gap: 7px;
+    width: 8.5em;
+    height: 2.9em;
+    font-size: 18px;
+    border: #670c07 0.2em solid;
+}
+
+#DeletionButt,
+#EditButt {
+    width: 6.5em;
+    height: 2.8em;
+    font-size: 14px;
+    border: #670c07 0.2em solid;
+}
+
+#AddItemInListButt:hover,
+#DeletionButt:hover,
+#EditButt:hover {
+    transform: scale(0.9);
+    background-color: #670c07;
+    cursor: pointer;
+}
+
+#AddItemInListButt h3 {
+    font-weight: 400;
+    font-size: 24px;
+    transition: all 0.6s ease;
+}
+
+#DeletionButt,
+#EditButt {
+    margin: 0px 5px 0px 5px;
+}
